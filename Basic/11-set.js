@@ -64,3 +64,4 @@ mySet.add("Fiesta")
 mySet.add("Fiesta")
 console.log(mySet)
 //Aunque lo "añada" 500 veces, solo se añadira UNA vez
+//pero tiene que ser exactamente igual
