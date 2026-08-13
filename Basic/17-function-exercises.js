@@ -52,20 +52,17 @@ let arrayStr = ["Hola", "Adios", "Buenas", "Ordenador"]
 strMayus(arrayStr)
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario.
-/*
-const esPrimo = (num) => {
-    if(num % 2 == 0 && !(num == 2)){
-        return false
-    } else if(){
-    
-    }
-    return true
+function esPrimo(num){
+  if(num <= 1 ) return false //El 0 y el 1 NO son considerados primos, asi que los eliminamos del planteamiento
+    for(let i = 2; i< num; i++){
+         if(num % i == 0){
+            return false
+          }
+     }
+  return true
 }
-*/
-const esPrimo = (num) => {
-   
-}
-console.log(esPrimo(47))
+esPrimo(66)
+
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos.
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares.
