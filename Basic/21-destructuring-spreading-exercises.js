@@ -91,6 +91,3 @@ let juanito2 = {...juanito, edad : 13, correo : "juanito@hotmail.com"}
 
 let {nombre : nombre2, ...restoDatos} = juanito2 //Combinacion de la desestructuracion, con el operador (...)
 console.log(restoDatos)
-
-
-
