@@ -27,4 +27,12 @@ console.log(circle.radius)
 console.log(circle.Area().toFixed(2))
 console.log(circle.Perimeter().toFixed(3))
 
-//Proyecto modular (Pendiente)
+//Proyecto modular 
+
+//import { MyImport } from "./directory/file.js"
+
+// Modulos externos
+
+const os = require("os")
+
+console.log(os.platform())
