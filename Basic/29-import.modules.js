@@ -37,7 +37,7 @@ console.log(circle.Perimeter().toFixed(3))
 
 console.log(os.platform()) */
 
-import { validPassWord } from "./31-modules.exercises.js"
+/* import { validPassWord } from "./31-modules.exercises.js"
 let passwd = "holaque_tal@Adrian123"
 try{
     validPassWord(passwd)
@@ -46,4 +46,4 @@ try{
 } finally {
     console.log("Ejecucion finalizada")
 }
-console.log(typeof passwd)
+console.log(typeof passwd) */

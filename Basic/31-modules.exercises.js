@@ -44,18 +44,47 @@ export function validPassWord(passwd){
 
 // 2. Exporta una constante
 
+export const saludo = "Hola"
+
 // 3. Exporta una clase
 
+export class ClaseExportada{
+    constructor(mensaje){
+        this.mensaje = mensaje
+    }
+}
+
 // 4. Importa una función
-
 // 5. Importa una constante
-
 // 6. Importa una clase
+
+import { add, PI, Circle } from "./28-export-modules.js"
+
 
 // 7. Exporta una función, una constante y una clase por defecto
 
+export default function porDefecto(){
+    console.log("Soy una funcion exportada por defecto")
+}
+
+//export default const constPorDefecto = "Soy una constante exportada por defecto" 
+//NO se puede exportar constantes por defecto
+
+export default class Defecto{
+    porDefecto(){
+        console.log("Soy una clase exportada por defecto")
+    }
+}
+
 // 8. Importa una función, una constante y una clase por defecto
+import substract from "./28-export-modules.js" //Funcion por defecto comentada en el fichero 28
+import MyClass from "./28-export-modules.js"
+//No se puede importar constantes por defecto
 
 // 9. Exporta una función, una constante y una clase desde una carpeta
 
+//import { miFuncion, miConstante, miClase } from "./miCarpeta/fichero.js"
+
 // 10. Importa una función, una constante y una clase desde un directorio diferente al anterior
+
+//import { miFuncion, miConstante, miClase } from "../otroDirectorio/fichero.js"
