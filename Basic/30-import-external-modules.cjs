@@ -8,3 +8,5 @@ console.log(os.totalmem())
 console.log(os.freemem())
 
 //Operaciones del sistema de un modulo que tenemos en os (Operative System)
+
+
