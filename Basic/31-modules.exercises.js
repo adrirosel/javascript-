@@ -19,6 +19,7 @@ function tieneNumeros(passwd){
             continue
         }else{
             tieneNum = true
+            break
         }
     }
     if(tieneNum === false){
