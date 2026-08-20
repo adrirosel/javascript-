@@ -37,7 +37,7 @@ function potencia(base, exp){
     } 
     return base * potencia(base, exp - 1)
 }
-console.log(potencia(5,5)) //9
+console.log(potencia(5,5)) //3125
 
 
 //4. Crea una funcion createCounter() que reciba un valor inicial y retorne un objeto con metodos para increment(), decrement() y getValue(), utilizando un closure para mantener el estado
