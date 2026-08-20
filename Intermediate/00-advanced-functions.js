@@ -195,4 +195,23 @@ console.log(sumAB(5)(7))
 //para tener un comportamiento muy concreto de cada una de las funciones
 //que yo puedo invocar poco a poco sin necesidad de hacer una llamada completa
 
-// Callbacks (pendiente)
+// Callbacks
+
+function processData(data, callback){
+    const result = sum(...data)
+    callback(result)
+}
+
+function processResult(result){
+    console.log(result)
+}
+function processResult2(result){
+    console.log(`Mi resultado es: ${result}`)
+}
+
+processData([1, 2, 3], processResult)
+processData([1, 2, 3], processResult2)
+processData([1, 2, 3], (result) => {
+    console.log(`Mi resultado en la arroy function es: ${result}`)
+})
+
