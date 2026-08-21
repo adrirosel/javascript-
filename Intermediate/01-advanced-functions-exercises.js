@@ -42,30 +42,38 @@ console.log(potencia(5,5)) //3125
 
 //4. Crea una funcion createCounter() que reciba un valor inicial y retorne un objeto con metodos para increment(), decrement() y getValue(), utilizando un closure para mantener el estado
 
-//Pendiente 
-/* function createCounter(valor){
-    return objeto = {
-        increment(){
-            valor++
-            console.log(`Valor: ${valor}`)
+ 
+function createCounter(valor){
+    let valorInicial = valor
+    return { 
+        Increment(){
+            valorInicial++
+            console.log(`Valor: ${valorInicial}`)
         },
         decrement(){
-            valor--
-            console.log(`Valor: ${valor}`)
+            valorInicial--
+            console.log(`Valor: ${valorInicial}`)
         },
         getValue(){
-            return valor
+            return valorInicial
         }
     }
 }
-let valor = 5
-const counter = createCounter(valor).increment()
-console.log(counter)
-console.log(counter)
-console.log(counter)
-console.log(counter)
-console.log(counter) */
 
+/* let counter = createCounter(1)
+console.log(counter.Increment())
+//console.log(counter.Increment())
+console.log(counter.Increment())
+//console.log(counter.decrement())
+console.log(counter.getValue()) 
+ */
+
+let counter = createCounter(1)
+counter.Increment()
+counter.Increment()
+counter.Increment()
+counter.decrement()
+console.log(counter.getValue())
 //5. Crea una funcion sumManyTimes(multiplier, ...numbers) que primero sume todos los numeros (usando parametros Rest) y luego multiplique el resultado por multiplier
 
 //6. Crea un callback que se invoque con el resultado de la suma de todos los numeros que se le pasan a una funcion
