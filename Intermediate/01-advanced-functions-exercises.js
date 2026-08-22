@@ -5,7 +5,7 @@ const saludar = function saludo(name){
 }
 
 function obtenerSaludo(name){
-    return saludar(name)
+    return saludar
 }
 obtenerSaludo("Adrian")
 //2. Implementa una funcion currificada que multiplique 3 numeros
